@@ -38,7 +38,109 @@ header {
   display:flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s;@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap');
+
+body {
+    font-size: 15pt;
+    padding:0;
+    margin:0;
+    outline:0;
+    box-sizing:border-box;
+    width:100vw;
+}
+
+body,html {
+  overflow:hidden;
+}
+
+header {
+  background:red;
+  color:white;
+  text-shadow:1px 0.01px black;
+  height:60px;
+  width:100%;
+  display:flex;
+  flex:1;
   transition: all 0.3s;
+  justify-content: center;
+  align-items: center;
+  
+    font-family:"Lobster",
+    sans-serif;
+    font-size:15pt;
+}
+
+#placeBtn {
+  background:snow;
+  height:80vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  flex-direction: column;
+
+}
+
+.changerBtn {
+  margin:6px;
+}
+
+#colorBack {
+  display:flex;
+  margin-top:130px;
+  
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  
+  
+  position:absolute;
+}
+
+button {
+  width:130px;
+  height:55px;
+  background:linear-gradient(to bottom right, red, orange);
+  border:none;
+  border-left: 5px solid darkred;
+  border-bottom: 5px solid darkred;
+  border-radius:30px;
+  box-shadow:2px 2px 5px #4F4F4F;
+  
+  color:white;
+  text-align:center;
+  outline:0;
+  
+  font-family:"Lobster", sans-serif;
+  font-size:15pt;
+  
+  
+}
+
+footer {
+  background:red;
+  height:12vh; /*11vh*/
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+@keyframes pressBtn {
+  from {
+    border-left: 5px solid darkred;
+    border-bottom: 5px solid darkred;
+    box-shadow:2px 2px 5px #4F4F4F;
+  }
+  to {
+    border-left: 2px solid darkred;
+    border-bottom: 2px solid darkred;
+    box-shadow:1px 1px 4px #4F4F4F;
+  }
+}
   flex-direction: column;
 
 }
